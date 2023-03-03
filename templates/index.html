@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title style="color: #060E6F ;">Insurance Premium Prediction</title>
+  </head>
+  </style>
+  <body style="background-color: burlywood ;">
+    <h1 style="color: rgb(71, 2, 2);"><b>Insurance Premium Prediction</b></h1>
+    <form id="input-form" method="POST">
+      <label for="age"><b>Age:</b></label>
+      <input type="number" id="age" name="age" min ="0" max ="150" required><br><br>
+      <label for="sex"><b>Gender:</b></label>
+      <select id="sex" name="sex" required>
+        <option value="" disabled selected>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br><br>
+      <label for="bmi"><abbr title="BMI= (weight in kg) / (height in meter)**2 "> <b>BMI (Body Mass Index) :</b></abbr></label>
+      <input type="number" step="0.01" id="bmi" name="bmi" min ="0" max="100" required><br><br>
+      <label for="children"><b>Number of children:</b></label>
+      <input type="number" id="children" name="children" min ="0" max="20" required><br><br>
+      <label for="smoker"><b>Smoker:</b></label>
+      <select id="smoker" name="smoker" required>
+        <option value="" disabled selected>Select smoker status</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br><br>
+      <label for="region"><b>Region:</b></label>
+      <select id="region" name="region" required>
+        <option value="" disabled selected>Select region</option>
+        <option value="southeast">Southeast</option>
+        <option value="southwest">Southwest</option>
+        <option value="northeast">Northeast</option>
+        <option value="northwest">Northwest</option>
+      </select><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+  </body>
+</html>
